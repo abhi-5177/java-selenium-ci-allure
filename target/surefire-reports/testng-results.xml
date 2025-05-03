@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-03T16:47:15 IST" name="AllTests" finished-at="2025-05-03T16:47:19 IST" duration-ms="4145">
+  <suite started-at="2025-05-03T16:48:58 IST" name="AllTests" finished-at="2025-05-03T16:49:02 IST" duration-ms="3801">
     <groups>
     </groups>
-    <test started-at="2025-05-03T16:47:15 IST" name="GoogleTest" finished-at="2025-05-03T16:47:19 IST" duration-ms="4145">
+    <test started-at="2025-05-03T16:48:58 IST" name="GoogleTest" finished-at="2025-05-03T16:49:02 IST" duration-ms="3801">
       <class name="tests.GoogleTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.GoogleTest@58d75e99]" started-at="2025-05-03T16:47:15 IST" name="setUp" finished-at="2025-05-03T16:47:16 IST" duration-ms="879" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.GoogleTest@58d75e99]" started-at="2025-05-03T16:48:58 IST" name="setUp" finished-at="2025-05-03T16:48:59 IST" duration-ms="872" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testGoogleSearchTitle()[pri:0, instance:tests.GoogleTest@58d75e99]" started-at="2025-05-03T16:47:16 IST" name="testGoogleSearchTitle" finished-at="2025-05-03T16:47:19 IST" duration-ms="2995" status="FAIL">
+        <test-method signature="testGoogleSearchTitle()[pri:0, instance:tests.GoogleTest@58d75e99]" started-at="2025-05-03T16:48:59 IST" name="testGoogleSearchTitle" finished-at="2025-05-03T16:49:02 IST" duration-ms="2706" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Google1] but found [Google]]]>
@@ -63,7 +63,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGoogleSearchTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.GoogleTest@58d75e99]" started-at="2025-05-03T16:47:19 IST" name="tearDown" finished-at="2025-05-03T16:47:19 IST" duration-ms="224" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.GoogleTest@58d75e99]" started-at="2025-05-03T16:49:02 IST" name="tearDown" finished-at="2025-05-03T16:49:02 IST" duration-ms="175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
