@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #set -e  # Stop on error
+git push origin main
 
 echo "🧹 Cleaning old builds..."
 mvn clean test
