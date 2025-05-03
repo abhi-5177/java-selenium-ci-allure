@@ -1,4 +1,4 @@
-name: Run Tests and Deploy Allure Report
+name: CI with Allure History
 
 on:
   push:
@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Code
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Set up Java
@@ -17,7 +17,12 @@ jobs:
         with:
           java-version: '17'
 
-      - name: Run Tests with Maven
+      - name: Restore Allure History
+        run: |
+          git clone --branch gh-pages https://github.com/${{ github.repository }} gh-pages || exit 0
+          cp -R gh-pages/history target/allure-results/history || echo "No previous history"
+
+      - name: Run tests
         run: mvn clean test
 
       - name: Download Allure CLI
@@ -28,8 +33,9 @@ jobs:
       - name: Generate Allure Report
         run: |
           ./allure-2.27.0/bin/allure generate target/allure-results --clean -o allure-report
+          cp -R target/allure-results/history allure-report/history || echo "No history to copy"
 
-      - name: Deploy to GitHub Pages (no password)
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
