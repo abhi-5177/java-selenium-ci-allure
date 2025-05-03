@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e  # Stop on error
+#set -e  # Stop on error
 
 echo "🧹 Cleaning old builds..."
 mvn clean test
