@@ -2,6 +2,7 @@ package tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.*;
 import static org.testng.Assert.*;
 
@@ -12,6 +13,12 @@ public class GoogleTest {
     @BeforeClass
     public void setUp() {
         driver = new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+
+       /* ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless", "--disable-gpu");
+        driver = new ChromeDriver(options);
+*/
     }
 
     @Test
