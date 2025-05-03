@@ -18,6 +18,8 @@ public class GoogleTest {
     public void testGoogleSearchTitle() {
         driver.get("https://www.google.com");
         assertEquals(driver.getTitle(), "Google");
+        
+        //new change on 03/05/2025 -- 11:53 AM
     }
 
     @AfterClass
