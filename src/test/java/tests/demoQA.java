@@ -1,12 +1,13 @@
 package tests;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.*;
 import static org.testng.Assert.*;
 
-public class GoogleTest {
+public class demoQA {
 
     WebDriver driver;
 
@@ -23,8 +24,8 @@ public class GoogleTest {
 
     @Test
     public void testGoogleSearchTitle() {
-        driver.get("https://www.google.com");
-        assertEquals(driver.getTitle(), "Google");
+        driver.get("https://demoqa.com/");
+        assertEquals(driver.getTitle(), "DEMOQA");
         
         //new change on 05/05/2025 -- 11:00 AM
     }
