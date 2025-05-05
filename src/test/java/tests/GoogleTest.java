@@ -22,7 +22,7 @@ public class GoogleTest {
     }
 
     @Test
-    public void testGoogleSearchTitle() {
+    public void testGoogle() {
         driver.get("https://www.google.com");
         assertEquals(driver.getTitle(), "Google");
         

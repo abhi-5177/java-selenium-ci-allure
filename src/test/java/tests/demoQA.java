@@ -23,7 +23,7 @@ public class demoQA {
     }
 
     @Test
-    public void testGoogleSearchTitle() {
+    public void testdemoQA() {
         driver.get("https://demoqa.com/");
         assertEquals(driver.getTitle(), "DEMOQA");
         
