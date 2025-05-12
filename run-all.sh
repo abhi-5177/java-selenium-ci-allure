@@ -21,7 +21,7 @@ allure generate --single-file allure-results --clean -o allure-report
 # -----------------------
 # Push test code updates to MAIN branch
 # -----------------------
-echo "🔄 Committing test and report changes to MAIN branch..."
+echo " Committing test and report changes to MAIN branch..."
 git add .
 git commit -m " Test run and updated Allure report - $(date)" || echo "Nothing to commit"
 git push origin main
